@@ -96,13 +96,18 @@ body {
 }
 
 /* Gallery Section */
+/* Gallery Section */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;  /* 1 column layout */
   gap: 1rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.gallery a {
+  display: block;
 }
 
 .gallery img {
@@ -117,6 +122,7 @@ body {
 .gallery img:hover {
   transform: scale(1.03);
 }
+
 
 /* Video Gallery Section */
 .video-gallery {
