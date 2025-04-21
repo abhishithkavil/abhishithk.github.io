@@ -9,7 +9,7 @@ body {
 
 .hero-image img {
   width: 200%;
-  max-height: 400px; /* Adjust for desired height */
+  max-height: 500px; /* Adjust for desired height */
   object-fit: cover;
 }
 
