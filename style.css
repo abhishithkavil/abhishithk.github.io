@@ -95,12 +95,11 @@ body {
   border: none;
 }
 
-/* Gallery Section */
-/* Gallery Section */
+/* Photography Gallery Section */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;  /* 1 column layout */
-  gap: 4rem;
+  gap: 3rem;  /* Increased vertical space between images */
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -110,20 +109,18 @@ body {
   display: block;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr; /* 1 column layout */
-  gap: 4rem; /* More vertical space between images */
-  padding: 2rem;
-  max-width: 800px; /* Optional: narrow the width for a clean column */
-  margin: 0 auto;
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
-
 
 .gallery img:hover {
   transform: scale(1.03);
 }
-
 
 /* Video Gallery Section */
 .video-gallery {
@@ -160,13 +157,13 @@ body {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   .hero-image {
-    height: 500px; /* Increase the height for mobile view */
+    height: 500px;
   }
 
   .hero-image img {
-    width: 100%;    /* Make the image fill the container */
-    height: auto;   /* Maintain the aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t stretch beyond the container */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
   iframe {
@@ -191,4 +188,3 @@ body {
     padding: 0.5rem 1rem;
   }
 }
-
