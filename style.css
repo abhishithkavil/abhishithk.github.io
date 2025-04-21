@@ -100,7 +100,7 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: 1fr;  /* 1 column layout */
-  gap: 1rem;
+  gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -113,7 +113,7 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: 1fr; /* 1 column layout */
-  gap: 3rem; /* More vertical space between images */
+  gap: 4rem; /* More vertical space between images */
   padding: 2rem;
   max-width: 800px; /* Optional: narrow the width for a clean column */
   margin: 0 auto;
