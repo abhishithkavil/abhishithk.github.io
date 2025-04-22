@@ -7,6 +7,9 @@
 
   <!-- Lightbox2 CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -16,114 +19,79 @@
 
   <section id="architecture">
     <h2>My Architecture Portfolio</h2>
-    
-    <!-- Gallery for Architecture Images -->
-    <div class="gallery">
-      <a href="images/1.jpg" data-lightbox="architecture-gallery" data-title="Architecture 1">
-        <img src="images/1.jpg" alt="Architecture 1">
-      </a>
-      <a href="images/2.jpg" data-lightbox="architecture-gallery" data-title="Architecture 2">
-        <img src="images/2.jpg" alt="Architecture 2">
-      </a>
-      <a href="images/3.jpg" data-lightbox="architecture-gallery" data-title="Architecture 3">
-        <img src="images/3.jpg" alt="Architecture 3">
-      </a>
-      <a href="images/4.jpg" data-lightbox="architecture-gallery" data-title="Architecture 4">
-        <img src="images/4.jpg" alt="Architecture 4">
-      </a>
-      <a href="images/5.jpg" data-lightbox="architecture-gallery" data-title="Architecture 5">
-        <img src="images/5.jpg" alt="Architecture 5">
-      </a>
-      <a href="images/6.jpg" data-lightbox="architecture-gallery" data-title="Architecture 6">
-        <img src="images/6.jpg" alt="Architecture 6">
-      </a>
-      <a href="images/7.jpg" data-lightbox="architecture-gallery" data-title="Architecture 7">
-        <img src="images/7.jpg" alt="Architecture 7">
-      </a>
-      <a href="images/8.jpg" data-lightbox="architecture-gallery" data-title="Architecture 8">
-        <img src="images/8.jpg" alt="Architecture 8">
-      </a>
-      <a href="images/9.jpg" data-lightbox="architecture-gallery" data-title="Architecture 9">
-        <img src="images/9.jpg" alt="Architecture 9">
-      </a>
-      <a href="images/10.jpg" data-lightbox="architecture-gallery" data-title="Architecture 10">
-        <img src="images/10.jpg" alt="Architecture 10">
-      </a>
-      <a href="images/11.jpg" data-lightbox="architecture-gallery" data-title="Architecture 11">
-        <img src="images/11.jpg" alt="Architecture 11">
-      </a>
-      <a href="images/12.jpg" data-lightbox="architecture-gallery" data-title="Architecture 12">
-        <img src="images/12.jpg" alt="Architecture 12">
-      </a>
-      <a href="images/13.jpg" data-lightbox="architecture-gallery" data-title="Architecture 13">
-        <img src="images/13.jpg" alt="Architecture 13">
-      </a>
-      <a href="images/14.jpg" data-lightbox="architecture-gallery" data-title="Architecture 14">
-        <img src="images/14.jpg" alt="Architecture 14">
-      </a>
-      <a href="images/15.jpg" data-lightbox="architecture-gallery" data-title="Architecture 15">
-        <img src="images/15.jpg" alt="Architecture 15">
-      </a>
-      <a href="images/16.jpg" data-lightbox="architecture-gallery" data-title="Architecture 16">
-        <img src="images/16.jpg" alt="Architecture 16">
-      </a>
-      <a href="images/17.jpg" data-lightbox="architecture-gallery" data-title="Architecture 17">
-        <img src="images/17.jpg" alt="Architecture 17">
-      </a>
-      <a href="images/18.jpg" data-lightbox="architecture-gallery" data-title="Architecture 18">
-        <img src="images/18.jpg" alt="Architecture 18">
-      </a>
-      <a href="images/19.jpg" data-lightbox="architecture-gallery" data-title="Architecture 19">
-        <img src="images/19.jpg" alt="Architecture 19">
-      </a>
-      <a href="images/20.jpg" data-lightbox="architecture-gallery" data-title="Architecture 20">
-        <img src="images/20.jpg" alt="Architecture 20">
-      </a>
-      <a href="images/21.jpg" data-lightbox="architecture-gallery" data-title="Architecture 21">
-        <img src="images/21.jpg" alt="Architecture 21">
-      </a>
-      <a href="images/22.jpg" data-lightbox="architecture-gallery" data-title="Architecture 22">
-        <img src="images/22.jpg" alt="Architecture 22">
-      </a>
-      <a href="images/23.jpg" data-lightbox="architecture-gallery" data-title="Architecture 23">
-        <img src="images/23.jpg" alt="Architecture 23">
-      </a>
-      <a href="images/24.jpg" data-lightbox="architecture-gallery" data-title="Architecture 24">
-        <img src="images/24.jpg" alt="Architecture 24">
-      </a>
-      <a href="images/25.jpg" data-lightbox="architecture-gallery" data-title="Architecture 25">
-        <img src="images/25.jpg" alt="Architecture 25">
-      </a>
-      <a href="images/26.jpg" data-lightbox="architecture-gallery" data-title="Architecture 26">
-        <img src="images/26.jpg" alt="Architecture 26">
-      </a>
-      <a href="images/27.jpg" data-lightbox="architecture-gallery" data-title="Architecture 27">
-        <img src="images/27.jpg" alt="Architecture 27">
-      </a>
-      <a href="images/28.jpg" data-lightbox="architecture-gallery" data-title="Architecture 28">
-        <img src="images/28.jpg" alt="Architecture 28">
-      </a>
-      <a href="images/29.jpg" data-lightbox="architecture-gallery" data-title="Architecture 29">
-        <img src="images/29.jpg" alt="Architecture 29">
-      </a>
-      <a href="images/30.jpg" data-lightbox="architecture-gallery" data-title="Architecture 30">
-        <img src="images/30.jpg" alt="Architecture 30">
-      </a>
-      <a href="images/31.jpg" data-lightbox="architecture-gallery" data-title="Architecture 31">
-        <img src="images/31.jpg" alt="Architecture 31">
-      </a>
-      <a href="images/32.jpg" data-lightbox="architecture-gallery" data-title="Architecture 32">
-        <img src="images/32.jpg" alt="Architecture 32">
-      </a>
-      <a href="images/33.jpg" data-lightbox="architecture-gallery" data-title="Architecture 33">
-        <img src="images/33.jpg" alt="Architecture 33">
-      </a>
-    </div>
 
+    <!-- Swiper Container for Swipeable Gallery -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Each Image Slide -->
+        <div class="swiper-slide">
+          <a href="images/1.jpg" data-lightbox="architecture-gallery" data-title="Architecture 1">
+            <img src="images/1.jpg" alt="Architecture 1">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="images/2.jpg" data-lightbox="architecture-gallery" data-title="Architecture 2">
+            <img src="images/2.jpg" alt="Architecture 2">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="images/3.jpg" data-lightbox="architecture-gallery" data-title="Architecture 3">
+            <img src="images/3.jpg" alt="Architecture 3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="images/4.jpg" data-lightbox="architecture-gallery" data-title="Architecture 4">
+            <img src="images/4.jpg" alt="Architecture 4">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="images/5.jpg" data-lightbox="architecture-gallery" data-title="Architecture 5">
+            <img src="images/5.jpg" alt="Architecture 5">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="images/6.jpg" data-lightbox="architecture-gallery" data-title="Architecture 6">
+            <img src="images/6.jpg" alt="Architecture 6">
+          </a>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+
+      <!-- Swiper Pagination and Navigation Controls -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
   </section>
 
   <!-- Lightbox2 JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  </script>
+
 </body>
 </html>
+
+
 
