@@ -98,7 +98,7 @@ body {
 /* Gallery Section */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;  /* Mobile - single column */
+  grid-template-columns: 1fr;
   gap: 1rem;
   padding: 2rem;
   max-width: 1200px;
@@ -120,21 +120,6 @@ body {
 
 .gallery img:hover {
   transform: scale(1.03);
-}
-
-/* 2-row layout on laptops/desktops */
-@media (min-width: 768px) {
-  .gallery {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column;
-    overflow-x: auto;
-    gap: 1rem;
-  }
-
-  .gallery a {
-    min-width: 200px;
-  }
 }
 
 /* Video Gallery Section */
@@ -172,13 +157,13 @@ body {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   .hero-image {
-    height: 500px; /* Increase the height for mobile view */
+    height: 500px;
   }
 
   .hero-image img {
-    width: 100%;    /* Make the image fill the container */
-    height: auto;   /* Maintain the aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t stretch beyond the container */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
   iframe {
@@ -203,6 +188,7 @@ body {
     padding: 0.5rem 1rem;
   }
 }
+
 
   .btn {
     padding: 0.5rem 1rem;
