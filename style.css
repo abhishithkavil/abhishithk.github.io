@@ -1,178 +1,192 @@
 /* General Body Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  text-align: center;
-  color: #333;
-}
-
-/* Hero Image Section */
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 100%;
-  background-color: #f9f9f9;
-}
-
-.hero-image img {
-  width: 300px;
-  max-width: 80%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-/* Intro Section Styles */
-.intro-section {
-  padding: 2rem 1rem;
-}
-
-.intro-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.intro-section p {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.8;
-  color: #777;
-}
-
-/* Button Styles */
-.buttons {
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 350px;
-}
-
-.btn {
-  background-color: #111;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #444;
-}
-
-/* Photography Page - Gallery Section */
-#photography .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 2rem;
-}
-
-#photography .gallery a {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 1rem;
-}
-
-#photography .gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-#photography .gallery img:hover {
-  transform: scale(1.03);
-}
-
-/* Swiper Styles for Photography Page */
-.swiper-container {
-  width: 100%;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 1 row with 2 columns on laptops/desktops (Only for Photography Page) */
-@media (min-width: 768px) {
-  #photography .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
-    gap: 1rem;
-  }
-}
-
-/* Back Button */
-.back-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #111;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  margin: 2rem;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.back-btn:hover {
-  background-color: #444;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .hero-image {
-    height: 500px;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
-  iframe {
-    height: 400px;
-  }
-
-  .intro-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .intro-section p {
-    font-size: 1rem;
-  }
-
-  .buttons {
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-  }
-}
-
-  .btn {
-    padding: 0.5rem 1rem;
-  }
-}   
+ body {
+   margin: 0;
+   font-family: 'Segoe UI', sans-serif;
+   background-color: #fff;
+   text-align: center;
+   color: #333;
+ }
+ 
+ /* Photography Section */
+ #photography {
+ /* Hero Image Section */
+ .hero-image {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+   width: 100%;
+   background-color: #f9f9f9;
+ }
+ 
+ .hero-image img {
+   width: 300px;
+   max-width: 80%;
+   height: auto;
+   border-radius: 12px;
+   object-fit: cover;
+ }
+ 
+ /* Intro Section Styles */
+ .intro-section {
+   padding: 2rem 1rem;
+ }
+ 
+ .intro-section h2 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .intro-section p {
+   max-width: 700px;
+   margin: 0 auto;
+   line-height: 1.8;
+   color: #777;
+ }
+ 
+ /* Button Styles */
+ .buttons {
+   margin: 2rem auto;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   max-width: 350px;
+ }
+ 
+ .btn {
+   background-color: #111;
+   color: #fff;
+   text-decoration: none;
+   padding: 0.75rem 1.5rem;
+   border-radius: 999px;
+   font-weight: bold;
+   transition: background 0.3s ease;
+ }
+ 
+ .btn:hover {
+   background-color: #444;
+ }
+ 
+ /* Architecture Section */
+ #architecture {
+   padding: 4rem 2rem;
+   background-color: #f9f9f9;
+ }
+ 
+ #photography h2 {
+   font-size: 2.5rem;
+ #architecture h2 {
+   font-size: 2rem;
+   margin-bottom: 2rem;
+ }
+ 
+ /* Gallery Styles */
+ .pdf-container {
+   background-color: #fff;
+   padding: 2rem;
+   margin-bottom: 2rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+ }
+ 
+ .pdf-container h3 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .pdf-container iframe {
+   width: 100%;
+   height: 600px;
+   border: none;
+ }
+ 
+ /* Gallery Section */
+ /* Gallery Section */
+ .gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid with 250px as the minimum width */
+   gap: 2rem; /* Adds more gap between images */
+   grid-template-columns: 1fr;  /* 1 column layout */
+   gap: 1rem;
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .gallery a {
+   display: block;
+   position: relative;
+ }
+ 
+ .gallery img {
+ @@ -41,11 +119,26 @@
+   transition: transform 0.3s ease;
+ }
+ 
+ /* Hover effect on images */
+ .gallery img:hover {
+   transform: scale(1.03);
+ }
+ 
+ 
+ /* Video Gallery Section */
+ .video-gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+   padding: 2rem;
+ }
+ 
+ .video-box iframe {
+   width: 100%;
+   height: 315px;
+   border-radius: 12px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+ }
+ 
+ /* Back Button */
+ .back-btn {
+   display: inline-block;
+ @@ -63,9 +156,37 @@
+   background-color: #444;
+ }
+ 
+ /* Lightbox2 Image Title Style (Optional) */
+ .lightbox-image .caption {
+   font-size: 1.2rem;
+   color: #fff;
+ }
+ /* Mobile Adjustments */
+ @media (max-width: 768px) {
+   .hero-image {
+     height: 500px; /* Increase the height for mobile view */
+   }
+ 
+   .hero-image img {
+     width: 100%;    /* Make the image fill the container */
+     height: auto;   /* Maintain the aspect ratio */
+     max-width: 100%; /* Ensure it doesn’t stretch beyond the container */
+   }
+ 
+   iframe {
+     height: 400px;
+   }
+ 
+   .intro-section h2 {
+     font-size: 1.6rem;
+   }
+ 
+   .intro-section p {
+     font-size: 1rem;
+   }
+ 
+   .buttons {
+     flex-direction: row;
+     justify-content: center;
+     gap: 0.5rem;
+   }
+ 
+   .btn {
+     padding: 0.5rem 1rem;
+   }
+ }   
