@@ -54,7 +54,7 @@
         <div class="swiper-slide"><img src="images/32.jpg" alt="Architecture 32"></div>
         <div class="swiper-slide"><img src="images/33.jpg" alt="Architecture 33"></div>
       </div>
-      
+
       <!-- Add pagination and navigation buttons (optional) -->
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
@@ -68,6 +68,7 @@
 
   <script>
     var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',  // Change direction to vertical
       loop: true,
       slidesPerView: 1,
       spaceBetween: 10,
@@ -81,12 +82,8 @@
       },
       breakpoints: {
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,  // Keep 1 column for all devices
           spaceBetween: 20
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30
         }
       }
     });
