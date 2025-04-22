@@ -76,6 +76,40 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Swiper Container Styles */
+.swiper-container {
+  width: 100%;
+  height: 400px; /* Adjust based on your layout */
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Swiper Navigation Styles */
+.swiper-button-next, .swiper-button-prev {
+  color: #333;
+}
+
+.swiper-pagination {
+  bottom: 10px;
+}
+
+/* PDF Container */
 .pdf-container {
   background-color: #fff;
   padding: 2rem;
@@ -188,6 +222,7 @@ body {
     padding: 0.5rem 1rem;
   }
 }
+
 
 
   .btn {
